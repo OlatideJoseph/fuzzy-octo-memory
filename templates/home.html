@@ -1,0 +1,147 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALERT BASED INVENTORY APPLICATION</title>
+    <link rel="stylesheet" href="{% static 'style-1.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo&family=Playpen+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <section class="home">
+        <div class="home-page">
+            <div class="home-page-header">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="/home.html">
+                            <h1>Fsars Medical</h1>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="navigators">
+                            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/home.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#service">services</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#testimony">testimonials</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{% url 'stocks:stocks'%}">inventory</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{% url 'stocks:order'%}">Order stocks</a>
+                                    </li>
+                                </ul>
+                                <a href="{% url 'stocks:add'%}"><button>add stocks</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="home-content">
+                <h1>alert based inventory application</h1>
+                <p>health innovation technology.</p>
+                <a href=""><button>read more</button></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="service" id="service">
+        <div class="services">
+            <div class="box">
+                <i class="fa fa-hospital fa-shake"></i>
+                <h3>get diagnostic report</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem error ullam quos maiores fugiat.
+                    reprehenderit suscipit deleniti quos!</p>
+                <button>read more</button>
+            </div>
+            <div class="box">
+                <i class="fa fa-user-doctor fa-spin"></i>
+                <h3>help by specialist</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem error ullam quos maiores fugiat.
+                    reprehenderit suscipit deleniti quos!</p>
+                <button>read more</button>
+            </div>
+            <div class="box">
+                <i class="fa fa-calendar fa-beat-fade"></i>
+                <h3>choose your package</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem error ullam quos maiores fugiat.
+                    reprehenderit suscipit deleniti quos!</p>
+                <button>read more</button>
+            </div>
+            <div class="box  box-design">
+                <i class="fa fa-check fa-beat"></i>
+                <h3>make appointments</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem error ullam quos maiores fugiat.
+                    reprehenderit suscipit deleniti quos!</p>
+                <button>read more</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimony" id="testimony">
+        <div class="testimonies">
+            <div class="testimonials">
+                <h3>testimonials</h3>
+                <img src="/static/img/person.webp" alt="person">
+                <p class="name">JONATHAN MATHEW</p>
+                <p><span>"</span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias nam harum, soluta
+                    facilis, labor ratione ab dolor exercitationem id odio laboriosam similique consectetur, voluptatum
+                    iure
+                    <span>"</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="order stocks">
+        <div class="order stock">
+            <div class="order">
+                <h3>order for more stocks</h3>
+                <p>Welcome to fsars medical, where legit drrugs are giagnosed to individuals for their safety
+                    and also for good healths. please the order button to order for more stocks and if stocks are
+                    available please
+                    click the add stocks button to add more stocks.
+                </p>
+                <a href="{% url 'stocks:order'%}"> <button>order stocks</button></a>
+                <a href="{% url 'stocks:add'%}"><button>add stocks</button></a>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

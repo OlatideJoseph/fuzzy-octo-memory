@@ -1,0 +1,503 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.home-page {
+    width: 100%;
+    height: 100%;
+    background: url('/static/img/6.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+.home-page-header {
+
+    color: white;
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    border-bottom: 2px solid #333;
+}
+
+.home-page-header .navbar-brand h1 {
+    font-size: 35px;
+    font-family: 'Playpen Sans', cursive;
+    margin-left: 20px;
+    font-weight: 800;
+    color: white;
+}
+
+.navigators {
+
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 800;
+    padding: 0px 20px;
+    margin-right: 20px;
+}
+
+.nav-item {
+    padding: 0px 5px;
+
+    margin-right: 30px;
+}
+
+a.nav-link {
+    color: white;
+}
+
+a.nav-link:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.navigators a button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 20px;
+    color: black;
+    border: 2px solid white;
+    background-color: grey;
+    font-weight: 700;
+    margin-top: 0px;
+}
+
+.navigators a button:hover {
+    background-color: #333;
+    border: 2px solid grey;
+    font-weight: 600;
+    color: white;
+    font-weight: 700;
+}
+
+.home-content {
+
+    width: 100%;
+    height: 100%;
+    margin-left: 30px;
+}
+
+.home-content h1 {
+    font-family: 'Heebo' sans-serif;
+    padding-top: 200px;
+    text-transform: uppercase;
+    font-size: 40px;
+    color: grey;
+    font-weight: 900;
+}
+
+.home-content p {
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.home-content button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 20px;
+    border: 2px solid grey;
+    background-color: grey;
+    font-weight: 700;
+    margin-bottom: 150px;
+}
+
+.home-content button:hover {
+    background-color: #333;
+    font-weight: 700;
+    color: white;
+}
+
+.service {
+
+    width: 100%;
+    height: 100%;
+    background: url('/static/img/dark3.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 20px;
+    position: relative;
+}
+
+.services {
+
+    display: flex;
+    position: relative;
+}
+
+.box {
+    background: rgba(250, 227, 227, 0.5);
+    backdrop-filter: blur(5px);
+    margin-left: 30px;
+    color: #333;
+    border: 2px solid #333;
+    border-radius: 30px;
+    padding: 0px 10px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+.box i {
+    color: white;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+}
+
+.box h3 {
+    text-transform: capitalize;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.box p {
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.box button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 20px;
+    color: black;
+    border: 2px solid white;
+    background-color: grey;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.box button:hover {
+    background-color: #333;
+    font-weight: 700;
+    color: white;
+}
+
+.box-design i {
+    background-color: white;
+    color: #333;
+}
+
+.box-design {
+    border: 2px solid grey;
+    margin-right: 30px;
+    background-color: #333;
+}
+
+.box-design h3,
+.box-design p {
+    color: white;
+}
+
+.testimony {
+    background-color: grey;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+.testimonials {
+    text-align: center;
+}
+
+.testimonials h3 {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 800;
+    padding-top: 60px;
+
+}
+
+.testimonials img {
+    width: 10%;
+    clip-path: circle(55px);
+    border-radius: 50px;
+    padding-bottom: 0px;
+    margin-bottom: -20px;
+}
+
+.testimonials p {
+    width: 40%;
+    line-height: -1px;
+    margin-left: 400px;
+    margin-top: 0px;
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+
+.testimonials .name {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.testimonials span {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.order stocks {
+    width: 100%;
+    height: 100%;
+}
+
+.order {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.order h3 {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.order p {
+    width: 40%;
+    margin-left: 400px;
+    font-size: 20px;
+}
+
+.order button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 20px;
+    color: black;
+    border: 2px solid white;
+    background-color: grey;
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-bottom: 50px;
+}
+
+.order button:hover {
+    background-color: #333;
+    font-weight: 700;
+    color: white;
+}
+
+.form {
+    background-color: #333;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+
+.formm {
+    background-color: #333;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 60px;
+    padding-bottom: 150px;
+}
+
+.formmm {
+    background-color: #333;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 300px;
+}
+
+.form-input ul li {
+    list-style: none;
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 10px 0px;
+    margin-left: -30px;
+}
+
+.form-input hr {
+    width: 90%;
+    border: 3px solid red;
+}
+
+.form-input h3 {
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.forms p {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.forms p a {
+    text-decoration: underline;
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+p a:hover {
+    text-decoration: none;
+    color: grey;
+}
+
+.forms {
+    display: block;
+    margin-left: 300px;
+    margin-right: 300px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 50px;
+    border: 2px solid grey;
+    background: url('/static/img/dark2.webp') center center no-repeat;
+    background-size: cover;
+    color: white;
+    border-radius: 40px;
+}
+
+.forms h1 {
+    text-transform: uppercase;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 800;
+}
+
+.form-checked h4 {
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.form-checked label {
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.form-input h4 {
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.form-input input {
+    padding: 5px 70px;
+    border-radius: 20px;
+    border: 2px solid grey;
+}
+
+.forms button {
+    margin-right: 10px;
+    margin-bottom: 0px;
+}
+
+.forms button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 20px;
+    color: white;
+    border: 2px solid #333;
+    background-color: grey;
+    font-weight: 700;
+}
+
+.forms button:hover {
+    background-color: #eae3e3;
+    font-weight: 700;
+    color: black;
+}
+
+.form-input .btn input {
+    padding: 10px 20px;
+    font-weight: 700;
+    color: white;
+    background-color: grey;
+    text-transform: uppercase;
+    border: 2px solid #333;
+}
+
+.form .btn input:hover {
+    color: black;
+    background-color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: 2px solid gray;
+}
+
+.input {
+    margin-right: 40px;
+}
+
+p {
+    margin-right: 300px;
+    margin-top: -30px;
+}
+
+.input p label {
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 20px;
+    padding-top: 10px;
+    margin-right: 200px;
+}
+
+.form-input .input form input {
+    padding-right: 100px;
+}
+
+.form-input .input p label:nth-child(1) {
+    margin-right: 500px;
+    margin-bottom: 20px;
+}
+
+.error {
+    color: white !important;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    animation: errorBeating 3s ease-in-out infinite;
+    padding: 0px 5px 15px 5px;
+    border: 2px solid tomato;
+    border-radius: 20px;
+    margin-right: 50px;
+    background-color: red;
+}
+
+.info {
+    color: aqua;
+    padding: 0px 5px 15px 5px;
+    font-weight: bold;
+    padding: 12px;
+    background-color: green;
+    border: 2px solid aqua;
+    border-radius: 10px;
+    margin-right: 50px;
+   position: relative !important;
+}
+@keyframes errorBeating {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.9);
+    }
+}

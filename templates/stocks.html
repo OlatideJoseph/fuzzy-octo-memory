@@ -1,0 +1,70 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALERT BASED INVENTORY APPLICATION</title>
+    <link rel="stylesheet" href="{% static 'style-1.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+</head>
+
+<body style="margin: 0; padding: 0;">
+
+    <section class="form formmm">
+        <div class="forms">
+            <h1>stocks available</h1>
+            <div class="form-input">
+                {% if messages %}
+                {% for message in messages %}
+                <p class="{{message.tags}}">{{message.message}}</p>
+                {% endfor %}
+                {% endif %}
+                <h3>list of stocks available:</h3>
+                {% for pro in object_list %}
+                <form action="" class="input">
+                    {% if pro.quantity < pro.min_stock%} <p class="error">Stock level for "{{pro.name}}" is low, add
+                        stocks
+                        or order for more stocks.</p>
+                        {% endif %}
+                        <ul>
+                            <li>product: {{pro.name}}</li>
+                            <li>quantities: {{pro.quantity}}</li>
+                            <li>cost price per each: {{pro.cost_price}}</li>
+                            <li>selling price per each: {{pro.selling_price}}</li>
+                            <li>minimum stock level: {{pro.min_stock}}</li>
+                        </ul>
+                </form>
+                <hr />
+                {% endfor%}
+            </div>
+            <div class="buttons">
+                <a href="{% url 'stocks:add'%}"><button>Add Stocks</button></a>
+                <a href="{% url 'stocks:order'%}"><button>order stocks</button></a>
+            </div>
+            <p><a href="/">go back to home page</a></p>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
